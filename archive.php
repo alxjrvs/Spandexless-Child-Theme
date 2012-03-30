@@ -78,6 +78,16 @@ get_header();
 						<?php _e( 'Blog Archives', THEMEDOMAIN ); ?>
 		<?php endif; ?></h2>
     				
+					<div class="above_sidebar searchbuh">
+						<input type="submit" id="searchsubmit" value="Search" class="btn"><h2 class="widgettitle">Search</h2></input>
+						<form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
+<div><input type="text" size="18" value="" name="s" id="s" />
+
+</div>
+</form>
+
+</div> 
+					
     				<div class="ads125_wrapper">
 					    <?php
 					        $pp_side_banner = get_option('pp_side_banner');

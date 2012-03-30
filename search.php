@@ -18,9 +18,6 @@ get_header();
 				<div class="inner_wrapper">
 			
 				<div class="sidebar_content">
-				
-				<h2 class="widgettitle header"><?php printf( __( 'Results for &quot;%s&quot;', THEMEDOMAIN ), '' . get_search_query() . '' ); ?></h2>
-				
 				<?php
 				
 				global $more; $more = false; # some wordpress wtf logic
@@ -68,6 +65,8 @@ get_header();
 					    endif; 
 					?>
     				
+				<h2 class="widgettitle header"><?php printf( __( 'Results for &quot;%s&quot;', THEMEDOMAIN ), '' . get_search_query() . '' ); ?></h2>
+				
     				<div class="ads125_wrapper">
 					    <?php
 					        $pp_side_banner = get_option('pp_side_banner');
