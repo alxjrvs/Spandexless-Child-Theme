@@ -78,6 +78,15 @@ get_header();
 					    ?>
 					</div>
     			
+					<div class="above_sidebar searchbuh">
+						<input type="submit" id="searchsubmit" value="Search" class="btn"><h2 class="widgettitle">Search</h2></input>
+						<form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
+<div><input type="text" size="18" value="" name="s" id="s" />
+
+</div>
+</form>
+
+</div> 
     				<div class="sidebar">
     				
     					<div class="content">

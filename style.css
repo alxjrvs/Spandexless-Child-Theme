@@ -367,3 +367,6 @@ text-align: center;
 width:100%
 }
 
+.sidebar_wrapper .widgettitle.header {
+margin-bottom: 20px;
+}
