@@ -90,7 +90,7 @@ get_header();
 </form>
 </div>
 
-    				<div class="ads126_wrapper">
+    				<div class="ads125_wrapper">
 					    <?php
 					        $pp_side_banner = get_option('pp_side_banner');
 					    

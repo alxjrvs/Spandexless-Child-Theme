@@ -249,7 +249,7 @@ margin:0!important;
 
 .fb_edge_widget_with_comment {
 position: relative;
-width: 45px;
+width: 48px;
 }
 
 #content_wrapper .inner .inner_wrapper.fullwidth {
@@ -361,3 +361,9 @@ padding: 10px 19px 10px 21px;
 margin-left: 7px;
 background: white;
 }
+
+.widgettitle.header {
+text-align: center;
+width:100%
+}
+

@@ -20,15 +20,6 @@ get_header();
 			
 					<div class="sidebar_content">
 					
-							<h2 class="widgettitle header"><?php if ( is_day() ) : ?>
-						<?php printf( __( 'Archives / %s', THEMEDOMAIN ), get_the_date() ); ?>
-		<?php elseif ( is_month() ) : ?>
-						<?php printf( __( 'Archives / %s', THEMEDOMAIN ), get_the_date('F Y') ); ?>
-		<?php elseif ( is_year() ) : ?>
-						<?php printf( __( 'Archives / %s', THEMEDOMAIN ), get_the_date('Y') ); ?>
-		<?php else : ?>
-						<?php _e( 'Blog Archives', THEMEDOMAIN ); ?>
-		<?php endif; ?></h2>
 			
 				<?php
 
@@ -77,6 +68,15 @@ get_header();
 					<?php
 					    endif; 
 					?>
+							<h2 class="widgettitle header"><?php if ( is_day() ) : ?>
+						<?php printf( __( 'Archives / %s', THEMEDOMAIN ), get_the_date() ); ?>
+		<?php elseif ( is_month() ) : ?>
+						<?php printf( __( 'Archives / %s', THEMEDOMAIN ), get_the_date('F Y') ); ?>
+		<?php elseif ( is_year() ) : ?>
+						<?php printf( __( 'Archives / %s', THEMEDOMAIN ), get_the_date('Y') ); ?>
+		<?php else : ?>
+						<?php _e( 'Blog Archives', THEMEDOMAIN ); ?>
+		<?php endif; ?></h2>
     				
     				<div class="ads125_wrapper">
 					    <?php
