@@ -9,7 +9,7 @@ session_start();
 $pp_theme_version = THEMEVERSION;
 
 ?><!DOCTYPE html>
-<html xmlns:fb="http://ogp.me/ns/fb#" <?php language_attributes(); ?>>
+<html>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title><?php wp_title('&lsaquo;', true, 'right'); ?><?php bloginfo('name'); ?></title>
@@ -198,10 +198,29 @@ if(empty($pp_homepage_slider_trans))
 			
 		<!-- Begin header -->
 		<div id="header_wrapper">
-
+<!-- Project Wonderful Ad Box Loader -->
+<!-- Put this after the <body> tag at the top of your page -->
+<script type="text/javascript">
+   (function(){function pw_load(){
+      if(arguments.callee.z)return;else arguments.callee.z=true;
+      var d=document;var s=d.createElement('script');
+      var x=d.getElementsByTagName('script')[0];
+      s.type='text/javascript';s.async=true;
+      s.src='//www.projectwonderful.com/pwa.js';
+      x.parentNode.insertBefore(s,x);}
+   if (window.attachEvent){
+    window.attachEvent('DOMContentLoaded',pw_load);
+    window.attachEvent('onload',pw_load);}
+   else{
+    window.addEventListener('DOMContentLoaded',pw_load,false);
+    window.addEventListener('load',pw_load,false);}})();
+</script>
+<!-- End Project Wonderful Ad Box Loader -->
 <div class = "whorebar">
 <div class ="whorebarcallout_tip">
+<a href="mailto:tips@spandexless.com">
 <img src="/wp-content/uploads/2012/03/tips.png"></img>
+</a>
 </div>
 
 
@@ -217,7 +236,9 @@ if(empty($pp_homepage_slider_trans))
 				?>
 			</div>
 <div class ="whorebarcallout_ad">
+<a href="/advertise-with-spandexless/">
 <img src="/wp-content/uploads/2012/03/adwotjis.png"></img>
+</a> 
 </div>
 </div>
 </div>
@@ -256,9 +277,13 @@ if(empty($pp_homepage_slider_trans))
 				
 				<!-- End logo -->
 			</div>
+
+
 			<div class="above_sidebar">
-						<h2 class="widgettitle"> Who are we? </h2>
-						<p> Spandexless is a Comic review site that reviews stories that do not fall within the Superhero Genre. </p> 
+<a href="https://twitter.com/#!/spandexless"><p class="subscribe">Twitter</p></a>
+<a href="https://www.facebook.com/spandexless"><p class="subscribe">Facebook</p></a> 
+<a href="https://plus.google.com/116018839314520592520/posts"><p class="subscribe">Google+</p></a> 
+<a href="/feed/"><p class="subscribe">Subscribe</p></a>  
 					</div>
 			
 			<br class="clear"/>

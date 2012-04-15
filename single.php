@@ -77,7 +77,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 
 
 								
-								<?php echo _e( 'Posted by', THEMEDOMAIN ); ?> <?php echo get_the_author(); ?> on <?php echo get_the_time('d M Y'); ?> /
+								<?php echo _e( 'Posted by', THEMEDOMAIN ); ?> <?php the_author_posts_link(); ?> on <?php echo get_the_time('d M Y'); ?> /
 								
 
 <a href=""><?php comments_number('0 Comment', '1 Comment', '% Comments'); ?></a>

@@ -1,4 +1,5 @@
 <?php
+include("wejnswpwhitespacefix.php");
 /**
  * The main template file.
  *
@@ -124,7 +125,7 @@ else
 						</div>
 						<?php
 							endif; 
-						?>
+						?>	
 <?php dynamic_sidebar('abovesidebar_main'); ?>
 						<div class="ads125_wrapper">
 							<?php

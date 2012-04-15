@@ -38,7 +38,7 @@ get_header();
 				
 					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>		
 						
-							<h2 class="widgettitle header"><?php the_title(); ?></h2>
+							<h2 class="widgettitle header singlepage"><?php the_title(); ?></h2>
 							
 							<div class="page_fullwidth">			
 								<?php do_shortcode(the_content()); ?>

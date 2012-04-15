@@ -42,7 +42,7 @@ get_header();
 				
 					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>		
 						
-							<h2 class="widgettitle header"><?php the_title(); ?></h2>
+							<h2 class="widgettitle header pagehead"><?php the_title(); ?></h2>
 							
 							<div class="page_fullwidth">			
 								<?php do_shortcode(the_content()); ?>
@@ -53,34 +53,7 @@ get_header();
 				</div>
 				
 				<div class="sidebar_wrapper">
-    				<?php
-					    $twitter_id = get_option(SHORTNAME.'_twitter_username');
-					    $fb_id = get_option('pp_feedburner_id');
-					    
-					    if(!empty($twitter_id) OR !empty($fb_id)):
-					?>
-					<div class="social_profile">
-					    <div class="profile">
-					    	<a href="<?php echo $fb_id; ?>">
-					    		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social_feeds.png" alt="" class="alignleft social"/>
-					    	</a>
-					    	<h4><?php pp_feeds_count(); ?></h4>
-					    	<span class="count">subscribers</span>
-					    </div>
-					
-					    <div class="profile">
-					    	<a href="http://twitter.com/<?php echo $twitter_id; ?>">
-					    		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social_twitter.png" alt="" class="alignleft social"/>
-					    	</a>
-					    	<h4><?php pp_twitter_followers(); ?></h4>
-					    	<span class="count">followers</span>
-					    </div>
-					    
-					     <br class="clear"/>
-					</div>
-					<?php
-					    endif; 
-					?>
+    				
 					<div class="above_sidebar searchbuh">
 						<input type="submit" id="searchsubmit" value="Search" class="btn"><h2 class="widgettitle">Search</h2></input>
 						<form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
